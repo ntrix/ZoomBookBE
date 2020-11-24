@@ -1,12 +1,12 @@
 {
-    "name": "ZoomBookBE",
+    "name": "zoombookbe",
     "version": "0.1.0",
     "private": true,
     "scripts": {
         "start": "node server.js",
-        "dev": "DEBUG=ZoomBookBE:* nodemon server.js",
+        "dev": "DEBUG=zoombookbe:* nodemon server.js",
         "devstart": "nodemon server.js",
-        "build:ui": "rm -rf build && cd ../ZoomBookFE && npm run build && cp -r build ../ZoomBookBE"
+        "build:ui": "rm -rf build && cd ../zoombook && npm run build && cp -r build ../zoombookbe"
     },
     "engines": {
         "node": "12.16.x"

@@ -1,5 +1,5 @@
 const app = require('./app');
-const debug = require('debug')('ZoomBookBE:server');
+const debug = require('debug')('zoombookbe:server');
 const http = require('http');
 
 const port = normalizePort(process.env.PORT || '4000');
