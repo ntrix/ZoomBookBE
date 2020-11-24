@@ -46,14 +46,10 @@ const FriendRequestSchema = new Schema({
     timestamp: String,
 });
 
-const FriendRequest = mongoose.model('FriendRequest', FriendRequestSchema);
-
-const Comment = mongoose.model('Comment', CommentSchema);
-
-const Reaction = mongoose.model('Reaction', ReactionSchema);
-
-const Post = mongoose.model('Post', PostSchema);
-
 const User = mongoose.model('User', UserSchema);
+const Post = mongoose.model('Post', PostSchema);
+const Reaction = mongoose.model('Reaction', ReactionSchema);
+const Comment = mongoose.model('Comment', CommentSchema);
+const FriendRequest = mongoose.model('FriendRequest', FriendRequestSchema);
 
 module.exports = { User, Post, Reaction, Comment, FriendRequest }
