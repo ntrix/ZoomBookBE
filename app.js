@@ -73,8 +73,7 @@ passport.use(
         },
         function (payload, done) {
             User.findOne({ email: payload.email }, (err, user) => {
-                if (err) return done(err);
-                return done(null, user || false);
+                return err? done(err): done(null, user || false);
             });
         },
     ),
