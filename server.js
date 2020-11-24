@@ -16,9 +16,7 @@ io.attach(server);
 function normalizePort(val) {
     const port = parseInt(val, 10);
 
-    if (isNaN(port)) return val;
-    if (port >= 0) return port;
-    return false;
+    return isNaN(port)? val: port? port: false;
 }
 
 function onError(error) {
